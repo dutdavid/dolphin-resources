@@ -1,75 +1,61 @@
 export default function About() {
+  const whatsappNumber = "254712345678" // Replace with your actual WhatsApp number
+  const whatsappMessage = "Hello! I'm interested in Prestige Home Surfaces services."
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
+
   return (
-    <section id="about" className="branches-section">
+    <section id="about" className="about-section">
       <div className="container">
-        <div className="section-header">
-          <h2 className="fade-in-up">About Prestige Home Surfaces</h2>
-          <p className="fade-in-up">Your trusted partner for kitchen interiors and flooring solutions</p>
-        </div>
+        <div className="about-content">
+          <div className="about-text">
+            <h2>About Prestige Home Surfaces</h2>
+            
+            <p>
+              With over a decade of experience in kitchen and home surface installations, 
+              Prestige Home Surfaces has become Nairobi's trusted partner for creating 
+              exceptional living spaces.
+            </p>
 
-        <div className="branches-grid">
-          <div className="branch-card card fade-in-up">
-            <div className="branch-header" style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' }}>
-              <div className="branch-icon">🏡</div>
-              <h3>Premium Flooring</h3>
-              <p>Durable & Beautiful Surfaces</p>
-            </div>
-            <div className="branch-body">
-              <div className="features-list">
-                <h4>Our Flooring Solutions</h4>
-                <ul>
-                  <li>✓ Hardwood Flooring</li>
-                  <li>✓ Luxury Vinyl Planks</li>
-                  <li>✓ Ceramic & Porcelain Tiles</li>
-                  <li>✓ Laminate Flooring</li>
-                </ul>
+            <p>
+              We specialize in transforming ordinary kitchens into extraordinary spaces. 
+              From custom cabinetry to premium countertops, our attention to detail and 
+              commitment to excellence ensures every project is picture-perfect.
+            </p>
+
+            <div className="about-stats">
+              <div className="stat-item">
+                <div className="stat-number">300+</div>
+                <div className="stat-label">Kitchens<br/>Installed</div>
               </div>
+              <div className="stat-item">
+                <div className="stat-number">8+</div>
+                <div className="stat-label">Years<br/>Experience</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Client<br/>Satisfaction</div>
+              </div>
+            </div>
+
+            <div className="about-buttons">
+              <a href="#contact" className="btn-primary">Get a Quote</a>
+              <a 
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp"
+              >
+                <span className="whatsapp-icon">💬</span>
+                Chat on WhatsApp
+              </a>
             </div>
           </div>
 
-          <div className="branch-card card fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="branch-header" style={{ background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)' }}>
-              <div className="branch-icon">🍳</div>
-              <h3>Kitchen Interiors</h3>
-              <p>Modern & Functional Designs</p>
-            </div>
-            <div className="branch-body">
-              <div className="features-list">
-                <h4>Kitchen Solutions</h4>
-                <ul>
-                  <li>✓ Custom Cabinets</li>
-                  <li>✓ Granite Countertops</li>
-                  <li>✓ Designer Backsplash</li>
-                  <li>✓ Kitchen Islands</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ marginTop: '60px', textAlign: 'center', maxWidth: '800px', margin: '60px auto 0' }}>
-          <h3 style={{ color: 'var(--primary)', marginBottom: '20px', fontSize: '28px' }}>Why Choose Us</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
-            <div style={{ padding: '20px', background: 'var(--light)', borderRadius: '10px' }}>
-              <div style={{ fontSize: '40px', marginBottom: '10px' }}>⭐</div>
-              <strong style={{ display: 'block', marginBottom: '5px' }}>Quality Materials</strong>
-              <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>Only the best products</p>
-            </div>
-            <div style={{ padding: '20px', background: 'var(--light)', borderRadius: '10px' }}>
-              <div style={{ fontSize: '40px', marginBottom: '10px' }}>🔧</div>
-              <strong style={{ display: 'block', marginBottom: '5px' }}>Expert Installation</strong>
-              <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>Professional craftsmen</p>
-            </div>
-            <div style={{ padding: '20px', background: 'var(--light)', borderRadius: '10px' }}>
-              <div style={{ fontSize: '40px', marginBottom: '10px' }}>💯</div>
-              <strong style={{ display: 'block', marginBottom: '5px' }}>Warranty Protection</strong>
-              <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>Peace of mind guarantee</p>
-            </div>
-            <div style={{ padding: '20px', background: 'var(--light)', borderRadius: '10px' }}>
-              <div style={{ fontSize: '40px', marginBottom: '10px' }}>🎨</div>
-              <strong style={{ display: 'block', marginBottom: '5px' }}>Free Consultation</strong>
-              <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>Design support included</p>
-            </div>
+          <div className="about-image">
+            <img 
+              src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800&h=600&fit=crop" 
+              alt="Luxury Kitchen Interior"
+            />
           </div>
         </div>
       </div>

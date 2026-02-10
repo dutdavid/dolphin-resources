@@ -1,127 +1,127 @@
 export const products = [
-  // Flooring Products (using original Prestige products)
+  // Kitchen Cabinet Products
   { 
     id: 1, 
-    name: "Premium Hardwood Flooring", 
-    price: 2500, 
-    category: "flooring", 
-    description: "Oak hardwood flooring per sqm", 
-    image: "/images/products/prestige-1.jpg", 
-    emoji: "🪵", 
-    color: "#f5576c" 
-  },
-  { 
-    id: 2, 
-    name: "Luxury Vinyl Flooring", 
-    price: 1500, 
-    category: "flooring", 
-    description: "Waterproof luxury vinyl planks per sqm", 
-    image: "/images/products/prestige-5.jpg", 
-    emoji: "📐", 
-    color: "#f093fb" 
-  },
-  
-  // Kitchen Products (using original Prestige products)
-  { 
-    id: 3, 
-    name: "Granite Countertop", 
-    price: 8500, 
+    name: "Modern White Kitchen Cabinets", 
+    price: 85000, 
     category: "kitchen", 
-    description: "Natural granite surface per meter", 
-    image: "/images/products/prestige-2.jpg", 
-    emoji: "💎", 
-    color: "#f093fb" 
-  },
-  { 
-    id: 4, 
-    name: "Kitchen Cabinet Set", 
-    price: 45000, 
-    category: "kitchen", 
-    description: "Complete modern kitchen cabinets", 
-    image: "/images/products/prestige-3.jpg", 
+    description: "Complete modern white kitchen cabinet set with black countertops", 
+    image: "/images/products/kitchen-1.jpg", 
     emoji: "🗄️", 
     color: "#f5576c" 
   },
   { 
-    id: 5, 
-    name: "Designer Backsplash Tiles", 
-    price: 1800, 
+    id: 2, 
+    name: "Wooden Luxury Kitchen Set", 
+    price: 120000, 
     category: "kitchen", 
-    description: "Ceramic subway tiles per sqm", 
-    image: "/images/products/prestige-4.jpg", 
-    emoji: "🔲", 
+    description: "Premium wooden cabinets with blue-gray countertops", 
+    image: "/images/products/kitchen-2.jpg", 
+    emoji: "🪵", 
     color: "#f093fb" 
+  },
+  { 
+    id: 3, 
+    name: "Marble Countertop Unit", 
+    price: 65000, 
+    category: "kitchen", 
+    description: "White cabinets with stunning marble countertop", 
+    image: "/images/products/kitchen-3.jpg", 
+    emoji: "💎", 
+    color: "#4facfe" 
+  },
+  { 
+    id: 4, 
+    name: "Contemporary Ceiling Design", 
+    price: 45000, 
+    category: "kitchen", 
+    description: "Modern false ceiling with integrated lighting", 
+    image: "/images/products/ceiling-1.jpg", 
+    emoji: "💡", 
+    color: "#00f2fe" 
+  },
+  { 
+    id: 5, 
+    name: "Premium Kitchen Island", 
+    price: 95000, 
+    category: "kitchen", 
+    description: "Central island with modern cabinets and ambient lighting", 
+    image: "/images/products/kitchen-5.jpg", 
+    emoji: "🏝️", 
+    color: "#f5576c" 
   },
   { 
     id: 6, 
-    name: "Kitchen Island Unit", 
-    price: 35000, 
+    name: "L-Shape Kitchen Design", 
+    price: 110000, 
     category: "kitchen", 
-    description: "Center island with storage and seating", 
-    image: "/images/products/prestige-6.jpg", 
-    emoji: "🏝️", 
+    description: "Contemporary L-shaped kitchen with dark wood finish", 
+    image: "/images/products/kitchen-6.jpg", 
+    emoji: "📐", 
     color: "#f093fb" 
   },
-
-  // Additional products using Excellence images (repurposed for Prestige)
+  
+  // Additional Kitchen Installations
   { 
     id: 7, 
-    name: "Luxury Velvet Curtains", 
-    price: 8500, 
+    name: "White & Gray Kitchen Suite", 
+    price: 98000, 
     category: "kitchen", 
-    description: "Premium velvet curtains for kitchen windows", 
-    image: "/images/products/excellence-1.jpg", 
-    emoji: "🪟", 
-    color: "#764ba2" 
+    description: "Complete white and gray kitchen with modern fixtures", 
+    image: "/images/products/kitchen-7.jpg", 
+    emoji: "🔲", 
+    color: "#4facfe" 
   },
   { 
     id: 8, 
-    name: "Crystal Chandelier", 
-    price: 25000, 
+    name: "Classic White Kitchen", 
+    price: 88000, 
     category: "kitchen", 
-    description: "Stunning crystal lighting fixture for dining area", 
-    image: "/images/products/excellence-2.jpg", 
-    emoji: "💎", 
-    color: "#667eea" 
+    description: "Elegant white kitchen with traditional styling", 
+    image: "/images/products/kitchen-8.jpg", 
+    emoji: "✨", 
+    color: "#00f2fe" 
   },
   { 
     id: 9, 
-    name: "Decorative Wall Art Set", 
-    price: 6500, 
+    name: "Open Plan Kitchen Design", 
+    price: 105000, 
     category: "kitchen", 
-    description: "Modern abstract art for kitchen walls", 
-    image: "/images/products/excellence-3.jpg", 
-    emoji: "🖼️", 
-    color: "#764ba2" 
+    description: "Spacious open kitchen with glass cabinets", 
+    image: "/images/products/kitchen-9.jpg", 
+    emoji: "🪟", 
+    color: "#f5576c" 
   },
+  
+  // Marble & Stone Products
   { 
     id: 10, 
-    name: "Event Table Centerpieces", 
-    price: 3500, 
-    category: "kitchen", 
-    description: "Elegant centerpiece for kitchen islands", 
-    image: "/images/products/excellence-4.jpg", 
-    emoji: "🌹", 
-    color: "#667eea" 
+    name: "Luxury Marble Sink Basins", 
+    price: 35000, 
+    category: "bathroom", 
+    description: "Premium marble oval sink basins (pair)", 
+    image: "/images/products/marble-basin.jpg", 
+    emoji: "🛁", 
+    color: "#f093fb" 
   },
   { 
     id: 11, 
-    name: "Designer Floor Lamp", 
-    price: 11000, 
-    category: "kitchen", 
-    description: "Modern arc floor lamp for kitchen areas", 
-    image: "/images/products/excellence-5.jpg", 
-    emoji: "💡", 
-    color: "#764ba2" 
+    name: "Glass Shower Partition", 
+    price: 28000, 
+    category: "bathroom", 
+    description: "Frameless glass shower enclosure with modern fixtures", 
+    image: "/images/products/shower-1.jpg", 
+    emoji: "🚿", 
+    color: "#4facfe" 
   },
   { 
     id: 12, 
-    name: "Luxury Throw Pillow Set", 
-    price: 4500, 
-    category: "kitchen", 
-    description: "Premium cushions for kitchen seating (4 pieces)", 
-    image: "/images/products/excellence-6.jpg", 
-    emoji: "🛋️", 
-    color: "#667eea" 
+    name: "Dark Wood Storage Unit", 
+    price: 42000, 
+    category: "storage", 
+    description: "Custom dark wood storage cabinet unit", 
+    image: "/images/products/storage-1.jpg", 
+    emoji: "🗃️", 
+    color: "#00f2fe" 
   }
 ]

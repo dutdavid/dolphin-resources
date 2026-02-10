@@ -4,11 +4,14 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import ProductCatalog from '@/components/ProductCatalog'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import Testimonials from '@/components/Testimonials'
 import Cart from '@/components/Cart'
 import Checkout from '@/components/Checkout'
 import Services from '@/components/Services'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
 
 export default function Home() {
   const [cartItems, setCartItems] = useState([])
@@ -69,9 +72,12 @@ export default function Home() {
       <Hero />
       <About />
       <ProductCatalog addToCart={addToCart} />
+      <WhyChooseUs />
+      <Testimonials />
       <Services />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
       
       <Cart
         isOpen={isCartOpen}

@@ -1693,3 +1693,382 @@ section {
     font-size: 13px;
   }
 }
+/* ========== TESTIMONIALS STYLES ========== */
+.testimonials-section {
+  background: var(--light);
+}
+
+.testimonials-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  padding: 50px 40px;
+  text-align: center;
+  flex: 1;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--accent);
+}
+
+.testimonial-emoji {
+  font-size: 50px;
+}
+
+.testimonial-rating {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial-author h4 {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.testimonial-author p {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  background: var(--secondary);
+  transform: scale(1.1);
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: var(--accent);
+  width: 30px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .gallery-item {
+    height: 250px;
+  }
+
+  .testimonials-carousel {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .carousel-btn.prev {
+    left: -10px;
+  }
+
+  .carousel-btn.next {
+    right: -10px;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+    min-height: 350px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+}
+/* ========== WHY CHOOSE US STYLES ========== */
+.why-choose-section {
+  background: white;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.why-choose-card {
+  text-align: center;
+  padding: 40px 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-10px);
+}
+
+.why-choose-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.why-choose-card h3 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.why-choose-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .why-choose-card {
+    padding: 30px 20px;
+  }
+}
+/* ========== ABOUT SECTION STYLES ========== */
+.about-section {
+  background: var(--light);
+  padding: 100px 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-text h2 {
+  color: var(--primary);
+  font-size: 42px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px 0;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-whatsapp:hover {
+  background: #20BA5A;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  height: 600px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ========== FLOATING WHATSAPP BUTTON ========== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float-icon {
+  display: block;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-stats {
+    padding: 30px 20px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .about-image {
+    height: 400px;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}

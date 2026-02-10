@@ -8,8 +8,9 @@ export default function ProductCatalog({ addToCart }) {
 
   const categories = [
     { id: 'all', name: 'All Products', count: products.length },
-    { id: 'flooring', name: 'Flooring', count: products.filter(p => p.category === 'flooring').length },
-    { id: 'kitchen', name: 'Kitchen', count: products.filter(p => p.category === 'kitchen').length }
+    { id: 'kitchen', name: 'Kitchen Cabinets', count: products.filter(p => p.category === 'kitchen').length },
+    { id: 'bathroom', name: 'Bathroom', count: products.filter(p => p.category === 'bathroom').length },
+    { id: 'storage', name: 'Storage', count: products.filter(p => p.category === 'storage').length }
   ]
 
   const handleAddToCart = (product) => {
@@ -27,7 +28,7 @@ export default function ProductCatalog({ addToCart }) {
       <div className="container">
         <div className="section-header">
           <h2>Our Products</h2>
-          <p>Explore our curated selection of premium products</p>
+          <p>Premium kitchen cabinets, countertops, and home installations</p>
         </div>
 
         <div className="category-filter">
@@ -62,7 +63,7 @@ export default function ProductCatalog({ addToCart }) {
                   <span className="product-emoji">{product.emoji}</span>
                 </div>
                 <span className="product-branch-badge">
-                  {product.category === 'flooring' ? 'Flooring' : 'Kitchen'}
+                  {product.category === 'kitchen' ? 'Kitchen' : product.category === 'bathroom' ? 'Bathroom' : 'Storage'}
                 </span>
               </div>
               <div className="product-info">
