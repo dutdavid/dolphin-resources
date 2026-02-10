@@ -1,34 +1,34 @@
 export default function Services() {
   const services = [
     {
+      icon: '🔨',
+      title: 'Kitchen Installation',
+      description: 'Complete kitchen setup and installation services'
+    },
+    {
+      icon: '🪵',
+      title: 'Flooring Installation',
+      description: 'Expert floor laying and finishing'
+    },
+    {
       icon: '🎨',
-      title: 'Interior Design',
-      description: 'Professional design consultation for your space'
+      title: 'Design Consultation',
+      description: 'Free professional design advice'
     },
     {
-      icon: '🏠',
-      title: 'Home Renovation',
-      description: 'Complete home transformation services'
+      icon: '📐',
+      title: 'Custom Measurements',
+      description: 'Precise on-site measurements'
     },
     {
-      icon: '🪑',
-      title: 'Furniture Supply',
-      description: 'Quality furniture for every room'
+      icon: '🛠️',
+      title: 'Repair & Maintenance',
+      description: 'Post-installation support'
     },
     {
-      icon: '💡',
-      title: 'Lighting Solutions',
-      description: 'Modern and traditional lighting options'
-    },
-    {
-      icon: '🎪',
-      title: 'Event Decoration',
-      description: 'Make your events memorable'
-    },
-    {
-      icon: '🔧',
-      title: 'Installation Services',
-      description: 'Professional installation and setup'
+      icon: '💎',
+      title: 'Premium Materials',
+      description: 'High-quality products guaranteed'
     }
   ]
 
@@ -37,7 +37,7 @@ export default function Services() {
       <div className="container">
         <div className="section-header">
           <h2>Our Services</h2>
-          <p>Comprehensive solutions for all your interior needs</p>
+          <p>Comprehensive solutions for kitchens and flooring</p>
         </div>
 
         <div className="services-grid">

@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import BranchCards from '@/components/BranchCards'
+import About from '@/components/About'
 import ProductCatalog from '@/components/ProductCatalog'
 import Cart from '@/components/Cart'
 import Checkout from '@/components/Checkout'
@@ -67,7 +67,7 @@ export default function Home() {
         onCartClick={() => setIsCartOpen(true)}
       />
       <Hero />
-      <BranchCards />
+      <About />
       <ProductCatalog addToCart={addToCart} />
       <Services />
       <Contact />

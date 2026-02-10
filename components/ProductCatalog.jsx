@@ -6,6 +6,12 @@ export default function ProductCatalog({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [notification, setNotification] = useState('')
 
+  const categories = [
+    { id: 'all', name: 'All Products', count: products.length },
+    { id: 'flooring', name: 'Flooring', count: products.filter(p => p.category === 'flooring').length },
+    { id: 'kitchen', name: 'Kitchen', count: products.filter(p => p.category === 'kitchen').length }
+  ]
+
   const handleAddToCart = (product) => {
     addToCart(product)
     setNotification(`${product.name} added to cart!`)
@@ -14,7 +20,7 @@ export default function ProductCatalog({ addToCart }) {
 
   const filteredProducts = selectedCategory === 'all' 
     ? products 
-    : products.filter(p => p.branch === selectedCategory)
+    : products.filter(p => p.category === selectedCategory)
 
   return (
     <section id="products" className="products-section">
@@ -25,24 +31,15 @@ export default function ProductCatalog({ addToCart }) {
         </div>
 
         <div className="category-filter">
-          <button 
-            className={selectedCategory === 'all' ? 'active' : ''}
-            onClick={() => setSelectedCategory('all')}
-          >
-            All Products ({products.length})
-          </button>
-          <button 
-            className={selectedCategory === 'excellence' ? 'active' : ''}
-            onClick={() => setSelectedCategory('excellence')}
-          >
-            Excellence Interior ({products.filter(p => p.branch === 'excellence').length})
-          </button>
-          <button 
-            className={selectedCategory === 'prestige' ? 'active' : ''}
-            onClick={() => setSelectedCategory('prestige')}
-          >
-            Prestige Surfaces ({products.filter(p => p.branch === 'prestige').length})
-          </button>
+          {categories.map(category => (
+            <button 
+              key={category.id}
+              className={selectedCategory === category.id ? 'active' : ''}
+              onClick={() => setSelectedCategory(category.id)}
+            >
+              {category.name} ({category.count})
+            </button>
+          ))}
         </div>
 
         <div className="products-grid">
@@ -65,7 +62,7 @@ export default function ProductCatalog({ addToCart }) {
                   <span className="product-emoji">{product.emoji}</span>
                 </div>
                 <span className="product-branch-badge">
-                  {product.branch === 'excellence' ? 'Excellence' : 'Prestige'}
+                  {product.category === 'flooring' ? 'Flooring' : 'Kitchen'}
                 </span>
               </div>
               <div className="product-info">

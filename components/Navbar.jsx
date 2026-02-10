@@ -17,8 +17,8 @@ export default function Navbar({ cartCount, onCartClick }) {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <div className="logo">
-          <h2>Dolphin Resources</h2>
-          <p>Limited</p>
+          <h2>Prestige Home Surfaces</h2>
+          <p>Kitchen & Flooring Solutions</p>
         </div>
 
         <button 
@@ -32,7 +32,7 @@ export default function Navbar({ cartCount, onCartClick }) {
 
         <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
-          <li><a href="#branches" onClick={() => setMobileMenuOpen(false)}>Branches</a></li>
+          <li><a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a></li>
           <li><a href="#products" onClick={() => setMobileMenuOpen(false)}>Products</a></li>
           <li><a href="#services" onClick={() => setMobileMenuOpen(false)}>Services</a></li>
           <li><a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>

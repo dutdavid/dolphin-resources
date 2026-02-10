@@ -5,17 +5,17 @@ export default function Hero() {
       
       <div className="container hero-content">
         <div className="hero-text fade-in-up">
-          <h1>Transform Your Space</h1>
+          <h1>Premium Home Surfaces</h1>
           <p className="hero-subtitle">
-            Premium Interior Decor & Home Surface Solutions
+            Transform Your Kitchen & Floors
           </p>
           <p className="hero-description">
-            Dolphin Resources Limited brings you two specialized branches for all your interior needs - 
-            Excellence Interior Decor for events & interiors, and Prestige Home Surfaces for kitchen & flooring solutions.
+            Prestige Home Surfaces specializes in premium flooring and kitchen interior solutions. 
+            We combine quality materials with expert craftsmanship to create spaces that last a lifetime.
           </p>
           <div className="hero-buttons">
             <a href="#products" className="btn-primary">Shop Now</a>
-            <a href="#branches" className="btn-secondary">Our Branches</a>
+            <a href="#about" className="btn-secondary">Learn More</a>
           </div>
         </div>
       </div>
